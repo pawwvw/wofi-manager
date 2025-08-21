@@ -8,7 +8,6 @@ description = "JSON-configurable action launcher for wofi"
 readme = "README.md"
 homepage = "https://github.com/pawwvw/wofi-manager"
 repository = "https://github.com/pawwvw/wofi-manager"
-license = "MIT OR Apache-2.0"
 keywords = ["wofi", "launcher", "menu", "wayland"]
 categories = ["command-line-utilities"]
 
