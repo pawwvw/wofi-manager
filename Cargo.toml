@@ -3,6 +3,14 @@ name = "wofi-manager"
 version = "0.1.0"
 edition = "2024"
 license = "MIT OR Apache-2.0"
+authors = ["Bojan Kartal <bojankartal@gmail.com>"]
+description = "JSON-configurable action launcher for wofi"
+readme = "README.md"
+homepage = "https://github.com/pawwvw/wofi-manager"
+repository = "https://github.com/pawwvw/wofi-manager"
+license = "MIT OR Apache-2.0"
+keywords = ["wofi", "launcher", "menu", "wayland"]
+categories = ["command-line-utilities"]
 
 [dependencies]
 anyhow = "1.0.99"
