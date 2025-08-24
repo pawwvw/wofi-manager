@@ -22,7 +22,7 @@ fn main() -> Result<()> {
     let options_json: Value = serde_json::from_str(&options_file)?;
 
     let options = options_json.as_object().unwrap();
-    let mut wofi = Command::new("wofsd")
+    let mut wofi = Command::new("wofi")
         .arg("--dmenu")
         .stdin(Stdio::piped())
         .stdout(Stdio::piped())
@@ -43,7 +43,7 @@ fn main() -> Result<()> {
         .unwrap_or("")
         .to_string();
     let com_arr: Vec<&str> = com.split(" ").collect();
-    let program = &com_arr.get(0).unwrap();
+    let program = &com_arr.get(0).context("1")?;
     let args = &com_arr[1..];
 
     Command::new(&program).args(args).spawn()?;
